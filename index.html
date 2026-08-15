@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urban — Interior & Architecture </title>
+  <meta name="description"
+    content="Urban is an interior architecture studio designing residential and commercial spaces with restraint, materiality, and atmosphere." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg" id="heroBg">
+        <img src="assets/hero-interior.jpg" alt="Modern interior with concrete walls and warm brass lighting"
+          class="hero-img" />
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="hero-nav">
+        <div class="nav-brand fade-in" style="animation-delay:.4s">URBAN — EST. 2020</div>
+        <nav class="nav-links fade-in" style="animation-delay:.5s">
+          <a href="#works">WORKS</a>
+          <a href="#ethos">ABOUT</a>
+          <a href="#contact">CONTACT</a>
+        </nav>
+      </div>
+
+      <div class="hero-title">
+        <div class="mask-reveal">
+          <h1 class="display-text mask-reveal-inner">Urban</h1>
+        </div>
+        <div class="hero-tagline fade-in" style="animation-delay:1.2s">
+          <div class="hero-rule"></div>
+          <p>An interior architecture studio shaping spaces between matter and light. Concrete, brass, oak — restraint
+            as a discipline.</p>
+        </div>
+      </div>
+
+      <div class="scroll-indicator fade-in" style="animation-delay:1.5s">
+        <span>SCROLL TO EXPLORE</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ETHOS -->
+    <section id="ethos" class="ethos">
+      <div class="container">
+        <div class="section-label">— 01 / ABOUT</div>
+        <div class="ethos-headline display-text">
+          <h2 class="reveal">Spaces that</h2>
+          <h2 class="reveal indent italic-light" style="transition-delay:120ms">breathe with</h2>
+          <h2 class="reveal" style="transition-delay:240ms">quiet intent.</h2>
+        </div>
+        <div class="ethos-body reveal" style="transition-delay:360ms">
+          <p>We design at the intersection of architecture, materiality, and atmosphere. Every project begins with the
+            same question — how should this space feel at five in the afternoon?</p>
+        </div>
+        <div class="stats">
+          <div>
+            <div class="stat-num display-text">120+</div>
+            <div class="stat-label">PROJECTS</div>
+          </div>
+          <div>
+            <div class="stat-num display-text">14</div>
+            <div class="stat-label">COUNTRIES</div>
+          </div>
+          <div>
+            <div class="stat-num display-text">38</div>
+            <div class="stat-label">AWARDS</div>
+          </div>
+          <div>
+            <div class="stat-num display-text">2014</div>
+            <div class="stat-label">FOUNDED</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORKS -->
+    <section id="works" class="works">
+      <div class="container">
+        <div class="works-header">
+          <div class="reveal">
+            <div class="section-label brass">— 02 / SELECTED WORKS</div>
+            <h2 class="display-text works-title">Recent<br />Projects</h2>
+          </div>
+          <p class="works-intro">A selection of residential and commercial works. Each space, a study in restraint.</p>
+        </div>
+
+        <div class="grid" id="worksGrid"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <div class="container contact-inner">
+        <div class="section-label brass">— 03 / START A PROJECT</div>
+        <h2 class="display-text contact-title">Let's<br /><span class="italic-light">build.</span></h2>
+
+        <form class="contact-form" onsubmit="event.preventDefault();">
+          <div class="row-2">
+            <label class="field"><span>— YOUR NAME</span><input type="text" placeholder="JANE DOE" /></label>
+            <label class="field"><span>— EMAIL</span><input type="email" placeholder="HELLO@DOMAIN.COM" /></label>
+          </div>
+          <label class="field"><span>— PROJECT TYPE</span><input type="text"
+              placeholder="RESIDENTIAL / COMMERCIAL / OTHER" /></label>
+          <label class="field"><span>— TELL US ABOUT IT</span><input type="text"
+              placeholder="A FEW WORDS ABOUT THE SPACE..." /></label>
+
+          <div class="contact-foot">
+            <p class="contact-note">We respond within 48 hours. For press and collaborations, reach us at <span
+                class="brass">studio@urban.design</span></p>
+            <button type="submit" class="magnetic" id="magneticBtn"><span class="display-text">SEND →</span></button>
+          </div>
+        </form>
+
+        <footer class="site-footer">
+          <div>© 2026 URBAN STUDIO</div>
+          <div class="footer-links">
+            <a href="#">INSTAGRAM</a>
+            <a href="#">ARCHDAILY</a>
+            <a href="#">DEZEEN</a>
+          </div>
+          <div>COPENHAGEN — MILAN — TOKYO</div>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
